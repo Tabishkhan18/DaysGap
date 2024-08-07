@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DaysGap</title>
+</head>
+<body>
+    <h1 class="text-white text-center md:py-20 py-12 text-3xl italic font-semibold">Count the number of days between two dates!</h1>
+    <div class="main flex flex-col h-fit bg-[#03346E] justify-center md:mx-96 mx-5 rounded-xl">
+        <div class="calenders flex flex-col md:flex-row justify-center md:my-0 my-8">
+            <div class="dates md:m-10 my-5 flex flex-col md:items-start items-center">
+                <h1 class="pb-5 text-white font-semibold text-xl">Start Date:</h1>
+                <input type="date" name="startdate" id="startdate" class="calender px-8 md:py-4 py-2 rounded-md font-semibold text-xl" id="startdate">
+            </div>
+            <div class="dates md:m-10 my-5 flex flex-col md:items-start items-center">
+                <h1 class="pb-5 text-white font-semibold text-xl">End Date:</h1>
+                <input type="date" name="enddate" id="enddate" class="calender px-8 md:py-4 py-2 rounded-md font-semibold text-xl" id="enddate">
+            </div>
+        </div>
+        <div class="submit flex justify-center ">
+            <button class="w-48 h-14 mb-10 bg-[#6EACDA] rounded-md font-semibold text-xl active:bg-[#5A8DB3]" id="submit">Submit</button>
+        </div>
+        <div class="flex justify-center bg-[#E2E2B6] rounded-xl">
+            <h1 class="font-semibold text-xl m-5 italic" id="output">
+                Select the dates to get started.
+            </h1>
+        </div>
+    </div>
+    <h1 class="text-[#031D34] pt-10 text-center">TechTabish</h1>
+
+    <script src="script.js"></script>
+</body>
+</html>
